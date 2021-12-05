@@ -1,6 +1,7 @@
 package com.equipo02.backend.controller;
 
 import com.equipo02.backend.model.Doctores;
+import com.equipo02.backend.model.Paciente;
 import com.equipo02.backend.model.Usuario;
 import com.equipo02.backend.service.DoctoresService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,10 @@ public class DoctoresController {
         return DoctoresService.buscarDoctores();
     }
 
+    @GetMapping("/buscarDoctores/{id}")
+    public Doctores buscarDoctores(@PathVariable Integer id){
+        return DoctoresService.buscarPorId(id);
+    }
     /*
     @GetMapping("/buscarUsuario/{id}")
     public Usuario buscarUsuario(@PathVariable Integer id){
