@@ -1,15 +1,17 @@
 package com.equipo02.backend.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="Persona")
-public class Persona {
+public class Persona implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String Nombre;
     private Integer id;
+    private String Nombre;
+
 
 
     //Gets & Sets

@@ -5,10 +5,12 @@ import com.equipo02.backend.dao.UsuarioDAO;
 import com.equipo02.backend.model.Persona;
 import com.equipo02.backend.model.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Service
 public class PersonaServiceImple implements PersonaService{
 
     @Autowired

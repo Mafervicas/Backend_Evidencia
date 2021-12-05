@@ -10,11 +10,20 @@ public class Doctores implements Serializable {
     //Inicializamos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String Paciente;
     private String Especialidad;
     private String Contrasena;
 
     //Gets & Sets
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getPaciente() {
         return Paciente;

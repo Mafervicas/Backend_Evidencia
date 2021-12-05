@@ -1,6 +1,5 @@
 package com.equipo02.backend.dao;
 
-import com.equipo02.backend.model.Administrador;
 import com.equipo02.backend.model.Persona;
 import org.springframework.data.repository.CrudRepository;
 

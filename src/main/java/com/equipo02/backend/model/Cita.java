@@ -7,10 +7,19 @@ import java.io.Serializable;
 public class Cita implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String Paciente;
     private String Doctor;
     private String Fecha;
 
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getPaciente() {
         return Paciente;
